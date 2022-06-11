@@ -1,0 +1,2135 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Keania+One&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <!--
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@600&display=swap" rel="stylesheet">
+-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="ava.png">
+    <title>Portfollio || Andriy Step</title>
+
+    <style>
+        ::-webkit-scrollbar {
+            width: 15px;
+
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #fff;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #111;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgba(0, 255, 68, 100);
+            color: #fff;
+            overflow-x: hidden
+        }
+
+        .cont {
+            width: 100%;
+            height: 100vh;
+            /*            display: flex;*/
+            flex-direction: row;
+            overflow: hidden
+        }
+
+        .box {
+            background-color: rgba(17, 17, 19, 1);
+            width: 30%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 30px;
+            padding-top: 60px;
+            flex-direction: column;
+            margin-left: 4%;
+        }
+
+        h2 {
+            font-size: 50px;
+            font-family: 'Keania One', cursive;
+            position: relative;
+        }
+
+        .box2 h2 {
+            font-size: 40px;
+        }
+
+        .text {
+            font-family: 'Kdam Thmor Pro', sans-serif;
+            display: flex;
+            justify-content: flex-start;
+            ;
+            align-items: center;
+            margin-right: 300px;
+        }
+
+        h1 {
+            transform: rotate(-90deg);
+            font-family: 'Kdam Thmor Pro', sans-serif;
+            /*            margin-left: 300px;*/
+            font-size: 100px;
+            margin-bottom: 10px;
+            color: rgba(17, 17, 19, 1);
+            /*            margin-left: 100px;*/
+            /*            position: static;*/
+        }
+
+
+
+        .who {
+            color: rgba(17, 17, 19, 1);
+            font-size: 35px;
+            font-family: 'Keania One', cursive;
+            position: relative;
+        }
+
+        .box2 {
+            /*            width: 30%;*/
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .ett {
+            color: rgba(0, 255, 68, 100);
+
+        }
+
+        .about {
+            color: gainsboro;
+            font-family: 'Alfa Slab One', cursive;
+            font-family: 'Public Sans', sans-serif;
+            font-size: 30px;
+            /*            font-family: 'Public Sans', sans-serif;*/
+        }
+
+        .et {
+            font-family: 'Public Sans', sans-serif;
+            font-size: 25px;
+            padding-top: 40px;
+        }
+
+        .buts {
+            display: flex;
+            /*            justify-content: center;*/
+            align-items: center;
+            width: 100%;
+            padding-top: 20px;
+
+        }
+
+        .button {
+            width: 200px;
+            height: 60px;
+            background-color: rgba(0, 255, 68, 100);
+            color: #000;
+            border-radius: 10px;
+            font-family: 'Alfa Slab One', cursive;
+            font-size: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Public Sans', sans-serif;
+            cursor: pointer;
+        }
+
+        .read {
+            width: 4%;
+            height: 100vh;
+            background-color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            z-index: 10;
+        }
+
+        .tippy-box[data - animation='rotate'][data - state='hidden'] {
+            opacity: 0;
+            transform: rotate(90 deg);
+        }
+
+        .read img {
+            width: 60%;
+            margin: 10px 0;
+            cursor: pointer;
+            filter: brightness(0) invert(1);
+            margin-left: 20%;
+
+        }
+
+        .read {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .img_home img {
+            filter: brightness(1)
+        }
+
+        .cont_TWO {
+            width: 100%;
+            /*            height: 410vh;*/
+            display: flex;
+            flex-direction: row;
+            overflow-x: hidden;
+        }
+
+        .box_projects {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            flex-direction: column;
+            margin-left: 4%;
+            padding-top: 60px;
+        }
+
+        .box_projects h2 {
+            font-size: 60px;
+        }
+
+        .cont_TWO .read img {
+            filter: brightness(0)
+        }
+
+        .cont_TWO .read .img_pro img {
+            filter: brightness(1)
+        }
+
+        .black {
+            color: rgba(17, 17, 17, 100);
+        }
+
+        .img_project img {
+            width: 100%;
+            border-radius: 20px
+        }
+
+        .img_project {
+            width: 45%;
+        }
+
+        .project {
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+
+        .info_project {
+            width: 55%;
+            padding: 10px;
+            padding-left: 50px;
+        }
+
+        .info_project p {
+            font-size: 20px;
+            font-family: 'Public Sans', sans-serif;
+        }
+
+        h3 {
+            font-family: 'Kdam Thmor Pro', sans-serif;
+            font-size: 35px;
+        }
+
+        .read {
+            position: fixed;
+        }
+
+        .git {
+            color: #fff;
+            text-decoration: none;
+            font-size: 25px;
+            padding-top: 10px;
+            font-family: 'Keania One', cursive;
+            display: flex;
+            width: 100%;
+            justify-content: flex-end;
+        }
+
+
+        a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .contact_me {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+        }
+
+        .contact_me .read .img_contact img {
+            filter: brightness(1)
+        }
+
+
+
+        .cont_box {
+            margin-left: 4%;
+            width: 96%;
+            height: 100vh;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+            background-color: rgba(17, 17, 17, 100);
+        }
+
+        textarea {
+            width: 60%;
+            height: 150px;
+            margin: 10px;
+            padding: 10px;
+            font-size: 20px;
+            color: #333;
+            border-radius: 5px;
+            border: 1px solid #333;
+            outline: none;
+        }
+
+        button {
+            width: 180px;
+            height: 40px;
+            margin-top: 20px;
+            border: none;
+            color: white;
+            background-color: rgba(0, 255, 68, 100);
+            border-radius: 5px;
+            font-weight: 900;
+            font-size: 18px;
+            font-family: monospace;
+            cursor: pointer;
+            transition: 1s;
+            position: relative;
+        }
+
+        button:hover {
+            background-color: rgba(40, 170, 68, 100);
+            transition: 1s;
+            margin-left: 40px;
+        }
+
+        button:active {
+            top: 3px;
+            transition: 1s;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+            /*            padding: 30px 50px;*/
+            justify-content: center;
+            height: 88vh;
+        }
+
+        input {
+            width: 60%;
+            height: 50px;
+            margin: 10px;
+            padding: 10px;
+            font-size: 20px;
+            color: #333;
+            border-radius: 5px;
+            border: 1px solid #333;
+            outline: none;
+        }
+
+        .mm {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .mm h3 {
+            font-size: 33px;
+        }
+
+        .green {
+            color: rgba(0, 255, 68, 100);
+        }
+
+        .info_card {
+            height: 88vh;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .img_mar {
+            height: 80%;
+            width: 80%;
+            background-image: url(ex.png);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .cont {
+            /*            display: none;*/
+        }
+
+        .cont_TWO {
+            /*            display: none;*/
+        }
+
+        .cont_TWO .read img {
+            filter: brightness(0) invert(1);
+        }
+
+        .contact_me .read img {
+            filter: brightness(0) invert(1);
+        }
+
+        .contact_me {
+            /*            display: none;*/
+        }
+
+        .cont_about {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+            background-color: #111;
+        }
+
+        #bb {
+            background: rgb(0, 255, 68);
+            background: linear-gradient(59deg, rgba(0, 255, 68, 1) 0%, rgba(0, 255, 162, 1) 100%);
+            width: 35%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cont_about .read img {
+            filter: brightness(0) invert(1);
+        }
+
+        .cont_about .read .img_about img {
+            filter: brightness(1);
+        }
+
+        .image {
+            width: 80%;
+            height: 80%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .info_about {
+            width: 61%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box_info-AB {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .box_info-AB p {
+            font-size: 20px;
+            font-family: 'Poppins', sans-serif;
+            margin-bottom: 20px;
+        }
+
+        .box_info-AB h2,
+        .box_info-AB h3 {
+            color: rgba(0, 255, 68, 100);
+            font-family: 'Keania One', cursive;
+            font-size: 40px;
+            /*            font-family: 'Poppins', sans-serif;*/
+        }
+
+        .txt {
+            font-size: 25px;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+        }
+
+        .info_more {
+            display: flex;
+            flex-direction: column;
+        }
+
+        nav span {
+            font-size: 20px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .cont_skills .read img {
+            filter: brightness(0) invert(1);
+        }
+
+        .cont_skills .read .img_skill img {
+            filter: brightness(1);
+        }
+
+        .cont_skills {
+            width: 100%;
+            display: flex;
+            height: 100vh;
+        }
+
+        .coon {
+            /*            background-color: #111;*/
+            width: 96%;
+            height: 100vh;
+            margin-left: 4%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .cont_skills,
+        .cont_TWO,
+        .cont_about,
+        .contact_me {
+            display: none;
+        }
+
+        .cont {
+            display: flex
+        }
+
+        .sec_co {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .lang {
+            font-family: 'Poppins', sans-serif;
+            margin: 50px;
+            font-size: 40px
+        }
+
+        .firr,
+        .secc {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .tech,
+        .soft {
+            height: 50vh;
+            width: 100%;
+            margin: 40px;
+        }
+
+        .tech h2,
+        .soft h2 {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .soft {
+            color: #111;
+        }
+
+        @media screen and (max-width: 1286px) {
+            h1 {
+                font-size: 50px;
+                margin-left: 170px;
+            }
+        }
+
+        .inv {
+            display: none;
+        }
+
+        @media screen and (max-width: 1209px) {
+            h1 {
+                font-size: 50px;
+                margin-left: 0;
+                transform: rotate(0deg);
+                display: none;
+            }
+
+            .inv {
+                display: flex;
+                font-size: 80px
+            }
+
+            .box2 {
+                width: 66%;
+                flex-direction: column
+            }
+
+            .box2 h2,
+            .who {
+                font-size: 60px;
+            }
+        }
+
+
+
+        @media screen and (max-width: 860px) {
+            .cont_sett {
+                flex-direction: column;
+                margin-left: 0;
+            }
+
+            .cont_sett .read {
+                width: 100%;
+                height: 7vh;
+                display: flex;
+                flex-direction: row;
+                z-index: 10;
+
+            }
+
+
+
+            .cont_sett .read img {
+                width: 33px;
+                margin: 10px;
+            }
+
+            .cont_sett .box_sett {
+                margin-left: 0%;
+                width: 100%;
+                /*                margin-top: 7vh;*/
+                height: 93vh;
+            }
+
+            .langua {
+                padding-top: 40px;
+            }
+
+            .cont_skills .read {
+                width: 100%;
+                height: 7vh;
+                display: flex;
+                flex-direction: row;
+                z-index: 10;
+
+            }
+
+            .cont_skills .read img {
+                width: 33px;
+                margin: 10px;
+            }
+
+            .cont_skills {
+                overflow-x: hidden;
+                flex-direction: column;
+            }
+
+            .contact_me {
+                flex-direction: column;
+                overflow: hidden
+            }
+
+            .contact_me .read {
+                width: 100%;
+                height: 7vh;
+                display: flex;
+                flex-direction: row;
+                z-index: 10;
+
+            }
+
+            .contact_me .read img {
+                width: 33px;
+                margin: 10px;
+            }
+
+            .cont_box {
+                width: 100%;
+                height: 93vh;
+                padding: 0;
+                margin: 0;
+                margin-top: 7vh;
+            }
+
+            .mm {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            input,
+            textarea {
+                width: 80%;
+            }
+
+            .inv,
+            .box2 h2 {
+                /*                font-size: 80px;*/
+                width: 100%;
+                margin-left: 30%;
+            }
+
+            .box h2 {
+                /*                font-size: */
+            }
+
+
+            .box {
+                width: 100%;
+                height: 30vh;
+                flex-direction: row;
+                padding-top: 0;
+                padding: 0;
+                justify-content: center;
+                align-items: center;
+                margin-left: 0;
+                margin-top: 7vh;
+                padding: 0 20px;
+            }
+
+            .let {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .cont {
+                flex-direction: column;
+            }
+
+            .cont .read {
+                width: 100%;
+                height: 7vh;
+                display: flex;
+                flex-direction: row;
+            }
+
+            .cont .read img {
+                width: 33px;
+                margin: 10px;
+            }
+
+            .et,
+            .buts {
+                margin-left: 30px;
+            }
+
+            .cont_TWO {
+                flex-direction: column;
+                margin-left: 0;
+            }
+
+            .cont_TWO .read {
+                width: 100%;
+                height: 7vh;
+                display: flex;
+                flex-direction: row;
+                z-index: 10;
+                /*                position: relative;*/
+
+            }
+
+            .box_projects {
+                margin-left: 0%;
+            }
+
+            .cont_TWO .read img {
+                width: 33px;
+                margin: 10px;
+            }
+        }
+
+        @media screen and (max-width: 625px) {
+            .box2 h1 {
+                font-size: 55px;
+            }
+
+            .box2 h2,
+            .who {
+                font-size: 40px;
+            }
+
+            .box h2 {
+                font-size: 40px
+            }
+
+            .et {
+                font-size: 20px;
+                padding-top: 5%;
+            }
+        }
+
+        @media screen and (max-width: 554px) {
+            .box {
+                height: 100vh;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .let {
+                flex-direction: column;
+            }
+
+            .et {
+                margin: 0;
+            }
+
+            .button {
+                width: 150px;
+                font-size: 20px;
+                height: 50px;
+            }
+        }
+
+        @media screen and (max-width: 1130px) {
+            .info_project p {
+                font-size: 15px
+            }
+
+
+        }
+
+        @media screen and (max-width: 1040px) {
+            .project {
+                flex-direction: column;
+            }
+
+            .img_project {
+                width: 90%;
+            }
+
+            .info_project p {
+                font-size: 25px
+            }
+
+            .info_project {
+                width: 90%;
+                padding: 0;
+            }
+        }
+
+        @media screen and (max-width: 701px) {
+            .info_project p {
+                font-size: 20px
+            }
+
+
+        }
+
+        @media screen and (max-width: 555px) {
+            .box_projects .pro_my {
+                font-size: 45px;
+            }
+        }
+
+        @media screen and (max-width: 935px) {
+            .img_mar {
+                display: none
+            }
+
+            .info_card {
+                display: none
+            }
+
+            form {
+                width: 90%;
+            }
+        }
+
+        @media screen and (max-width: 709px) {
+            .contact_me {
+                flex-direction: column;
+                overflow: hidden
+            }
+
+            .contact_me .read {
+                width: 100%;
+                height: 7vh;
+                display: flex;
+                flex-direction: row;
+                z-index: 10;
+
+            }
+
+            .contact_me .read img {
+                width: 33px;
+                margin: 10px;
+            }
+
+            .cont_box {
+                width: 100%;
+                height: 93vh;
+                padding: 0;
+                margin: 0;
+                margin-top: 7vh;
+            }
+
+            .mm {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            input,
+            textarea {
+                width: 80%;
+            }
+        }
+
+        @media screen and (max-width: 423px) {
+            .con {
+                /*                font-size: 42px*/
+            }
+        }
+
+        .kol {
+            background-color: none;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+
+
+
+        @media screen and (max-width: 1160px) {
+            .cont_about {
+                flex-direction: column;
+                overflow-x: hidden
+            }
+
+            #bb {
+                width: 100%;
+                height: 30vh;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+            }
+
+            .cont_about .read {
+                margin-right: 4%;
+            }
+
+            .info_about {
+                width: 96%;
+                margin-left: 4%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .image {
+                width: 200px;
+                height: 200px;
+            }
+
+            .kol {
+                width: 200px;
+                height: 200px;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                background-color: #fff;
+                border-radius: 50%
+            }
+        }
+
+        @media screen and (max-width: 860px) {
+            .cont_about .read {
+                width: 100%;
+                height: 7vh;
+                display: flex;
+                flex-direction: row;
+                z-index: 10;
+
+            }
+
+            .cont_about .read img {
+                width: 33px;
+                margin: 10px;
+            }
+        }
+
+        /*        @media screen and (max-width: 1150px) {*/
+        /*
+            .cont_skills .read {
+                width: 100%;
+                height: 7vh;
+                display: flex;
+                flex-direction: row;
+                z-index: 10;
+
+            }
+
+            .cont_skills .read img {
+                width: 33px;
+                margin: 10px;
+            }
+*/
+
+        .firr {
+            flex-direction: column;
+        }
+
+        .secc {
+            flex-direction: column;
+        }
+
+        .coon {
+            flex-direction: row;
+            width: 100%;
+            margin: 0;
+        }
+
+        .tech,
+        .soft {
+            width: 50%;
+            margin: 0;
+            padding: 0;
+            margin-top: -180px;
+        }
+
+        /*
+            .cont_skills {
+                overflow-x: hidden;
+                flex-direction: column;
+            }
+*/
+        }
+
+        @media screen and (max-width: 660px) {
+            .lang {
+                font-size: 30px
+            }
+
+            .cont_skills h2 {
+                font-size: 40px
+            }
+        }
+
+        @media screen and (max-width: 513px) {
+            .lang {
+                font-size: 30px;
+            }
+        }
+
+        @media screen and (max-width: 510px) {
+            .cont_skills h2 {
+                font-size: 35px
+            }
+        }
+
+        @media screen and (max-width: 501px) {
+            .lang {
+                font-size: 25px;
+            }
+
+            .cont_skills h2 {
+                font-size: 30px
+            }
+        }
+
+
+
+        .cont_skills {
+            overflow-x: hidden;
+        }
+
+        #ll {
+            color: rgba(0, 255, 68, 100);
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        .img_sett img {
+            transform: rotate(0deg);
+            transition: 1s;
+        }
+
+        .img_sett img:hover {
+            transform: rotate(130deg);
+            transition: 1s;
+        }
+
+        .cont_sett {
+            width: 100%;
+            height: 100vh;
+            background-color: #111;
+        }
+
+        .read {
+            /*            position: relative*/
+        }
+
+        .cont_sett .read img {
+            filter: brightness(0) invert(1);
+        }
+
+        .cont_sett .read .img_sett img {
+            filter: brightness(1)
+        }
+
+        .b_U img,
+        .b_A img {
+            height: 200px;
+        }
+
+        .b_U,
+        .b_A {
+            width: 440px;
+            height: 250px;
+            border: 20px double rgba(0, 255, 68, 100);
+            /*            border: hide;*/
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 50px;
+        }
+
+        .b_U img {
+            height: 200px;
+            width: 379.72px;
+
+        }
+
+        .box_sett {
+            margin-left: 4%;
+            width: 96%;
+        }
+
+        .langua {
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+        }
+
+        .my_social img {
+            width: 100px;
+            margin: 60px;
+            filter: brightness(0) invert(1);
+            transition: 0.4s;
+
+        }
+
+        .my_social img:hover {
+            filter: brightness(1);
+            transition: 0.4s;
+            margin-top: 20px;
+        }
+
+        .my_social {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .up,
+        .down {
+            display: flex;
+            flex-direction: row;
+        }
+
+        @media screen and (max-width: 1020px) {
+            .my_social {
+                flex-direction: column;
+                width: 100%;
+                height: 50vh;
+            }
+        }
+
+        @media screen and (max-width: 990px) {
+
+            .b_A,
+            .b_U {
+                width: 350px;
+                height: 200px;
+            }
+
+            .b_A img {
+                height: 150px;
+            }
+
+            .b_U img {
+                width: 284.8px;
+                height: 150px;
+            }
+
+            .up {
+                margin-top: 100px;
+            }
+
+            .down {
+                margin-bottom: 100px;
+            }
+        }
+
+        @media screen and (max-width: 763px) {
+            .langua {
+                display: flex;
+            }
+
+            .b_A img {
+                height: 100px;
+                /*                width: 189.86px;*/
+            }
+
+            .b_U img {
+                width: 189.86px;
+                height: 100px;
+            }
+
+            .b_A,
+            .b_U {
+                width: 230px;
+                height: 150px;
+            }
+
+            .my_social img {
+                width: 60px;
+                margin: 20px;
+            }
+        }
+
+        @media screen and (max-width: 548px) {
+            .langua {
+                flex-direction: column;
+                padding-top: 30vh;
+            }
+
+            .my_social {
+                margin-top: 100px;
+            }
+
+            .cont_sett {
+                overflow: hidden;
+            }
+        }
+
+        .cont_sett {
+            display: none;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+        <div class="read">
+            <div class="img_home">
+                <img src="home.png" alt="">
+            </div>
+            <div class="img_pro">
+                <img src="laptop.png" alt="">
+            </div>
+            <div class="img_contact">
+                <img src="contact.png" alt="">
+            </div>
+            <div class="img_about">
+                <img src="about.png" alt="">
+            </div>
+            <div class="img_skill">
+                <img src="skills.png" alt="">
+            </div>
+            <div class="img_sett">
+                <img src="settings.png" alt="">
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="let">
+                <h2>Hello, I'm <br> <span class="ett">Andriy Stepaniak</span></h2>
+                <br>
+                <span class="et">
+                    Developer + Designer + Student
+                </span>
+            </div>
+
+            <div class="buts">
+                <div class="button" id="butt">
+                    Contact me
+                </div>
+            </div>
+        </div>
+        <h1>MY PORTFOLIO</h1>
+        <div class="box2">
+            <h1 class="inv">MY PORTFOLIO</h1>
+            <h2><span class="eetee">You can call me </span><br> <span class="who">Andriy Stepaniak |</span></h2>
+        </div>
+    </div>
+
+    <div class="cont_TWO">
+        <div class="read">
+            <div class="img_home">
+                <img src="home.png" alt="">
+            </div>
+            <div class="img_pro">
+                <img src="laptop.png" alt="">
+            </div>
+            <div class="img_contact">
+                <img src="contact.png" alt="">
+            </div>
+            <div class="img_about">
+                <img src="about.png" alt="">
+            </div>
+            <div class="img_skill">
+                <img src="skills.png" alt="">
+            </div>
+            <div class="img_sett">
+                <img src="settings.png" alt="">
+            </div>
+        </div>
+        <div class="box_projects">
+            <h2 class="pro_my">/My <span class="black">best_pro</span>jects |</h2>
+            <div class="project">
+                <div class="img_project">
+                    <img src="img_proj/Y_FM.png" alt="">
+                </div>
+                <div id="yant" class="info_project">
+                    <h3><a href="https://yantarne-fm.netlify.app/">Yantarne.FM</a></h3>
+                    <p>This is upgrade project of YantarneFM with fixing bugs.</p>
+                    <a class="git" href="https://github.com/AndriyStep12/YANTARNE-FM_2.0">Visit on GitHub</a>
+                </div>
+            </div>
+            <div class="project">
+                <div class="img_project">
+                    <img src="img_proj/MB.png" alt="">
+                </div>
+                <div id="bazou" class="info_project">
+                    <h3><a href="https://andriystep12.github.io/Mon_Bazou/">Mon Bazou</a></h3>
+                    <p>DEMO version of site game Mon Bazou, where you can read information about this game and donat there.</p>
+                    <a class="git" href="https://github.com/AndriyStep12/Mon_Bazou">Visit on GitHub</a>
+                </div>
+            </div>
+            <div class="project">
+                <div class="img_project">
+                    <img src="img_proj/NFS.png" alt="">
+                </div>
+                <div id="nfs" class="info_project">
+                    <h3><a href="https://andriystep12.github.io/NeedForSpeed/">Need For Speed</a></h3>
+                    <p>Web-site Need For Speed, where I wanted to rely on js. Available is only one page. Some pictures can not load.</p>
+                    <a class="git" href="https://github.com/AndriyStep12/NeedForSpeed">Visit on GitHub</a>
+                </div>
+            </div>
+            <div class="project">
+                <div class="img_project">
+                    <img src="img_proj/VL.png" alt="">
+                </div>
+                <div id="lege" class="info_project">
+                    <h3><a href="https://andriystep12.github.io/Vehicle_Legends/">Vehicle Legends</a></h3>
+                    <p>This is website of game which call "Vehicle Legends". Information about this game on website no. Site has support all device.</p>
+                    <a class="git" href="https://github.com/AndriyStep12/Vehicle_Legends">Visit on GitHub</a>
+                </div>
+            </div>
+            <div class="project">
+                <div class="img_project">
+                    <img src="img_proj/DIJA.png" alt="">
+                </div>
+                <div id="dija" class="info_project">
+                    <h3><a href="https://andriystep12.github.io/Dija_Ukranian/">Dija (UA)</a></h3>
+                    <p>Дія (DEMO) - ukranian passport in smartphone which know all about you. This website was made on the basis of the Ukrainian program "Дія"</p>
+                    <a class="git" href="https://github.com/AndriyStep12/Dija_Ukranian">Visit on GitHub</a>
+                </div>
+            </div>
+            <div class="project">
+                <div class="img_project">
+                    <img src="img_proj/PA.png" alt="">
+                </div>
+                <div id="pacman" class="info_project">
+                    <h3><a href="https://andriystep12.github.io/Pacman/">Pacman</a></h3>
+                    <p>Game "Pacman" on PC. Play from one PC with your friend. In soon you will can play on your phone this game. Date of upgrade is 22/06/2022.</p>
+                    <a class="git" href="https://github.com/AndriyStep12/Pacman">Visit on GitHub</a>
+                </div>
+            </div>
+            <div class="project">
+                <div class="img_project">
+                    <img src="img_proj/Nascar.png" alt="">
+                </div>
+                <div id="nascar" class="info_project">
+                    <h3><a href="https://nascar-race.netlify.app/">Nascar</a></h3>
+                    <p>This is short website, which was built to find a new style in HTML and CSS. News in website are not actual.</p>
+                    <a class="git" href="https://github.com/AndriyStep12/Nascar">Visit on GitHub</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="contact_me">
+        <div class="read">
+            <div class="img_home">
+                <img src="home.png" alt="">
+            </div>
+            <div class="img_pro">
+                <img src="laptop.png" alt="">
+            </div>
+            <div class="img_contact">
+                <img src="contact.png" alt="">
+            </div>
+            <div class="img_about">
+                <img src="about.png" alt="">
+            </div>
+            <div class="img_skill">
+                <img src="skills.png" alt="">
+            </div>
+            <div class="img_sett">
+                <img src="settings.png" alt="">
+            </div>
+        </div>
+        <div class="cont_box">
+            <h2 class="con">/Contact <span class="green">with me |</span></h2>
+            <div class="mm">
+                <form action="https://formspree.io/f/xoqywrqb" method="POST">
+                    <h3>Write on <span class="green">Gmail</span> from website</h3>
+                    <input placeholder="Your name" type="name" name="name">
+                    <input placeholder="Your email" type="email" name="email">
+                    <input placeholder="Subject" type="text" name="message">
+                    <textarea placeholder="Message" type="text" name="message"></textarea>
+                    <button type="submit">Sumbit</button>
+                </form>
+                <div class="info_card">
+                    <div class="img_mar"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="cont_about">
+        <div class="read">
+            <div class="img_home">
+                <img src="home.png" alt="">
+            </div>
+            <div class="img_pro">
+                <img src="laptop.png" alt="">
+            </div>
+            <div class="img_contact">
+                <img src="contact.png" alt="">
+            </div>
+            <div class="img_about">
+                <img src="about.png" alt="">
+            </div>
+            <div class="img_skill">
+                <img src="skills.png" alt="">
+            </div>
+            <div class="img_sett">
+                <img src="settings.png" alt="">
+            </div>
+        </div>
+        <div class="box" id="bb">
+            <div class="kol">
+                <div class="image">
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="info_about">
+            <div class="box_info-AB">
+                <h2 class="abb">/About me|</h2>
+                <p class="about">
+                    <span class="txt">Hi there🔥✋. I'm Andriy</span>
+                    <br>
+                    I'm a young programmer. I study at Creator IT Academy and I like it there. During this time I learned something new and interesting. When I came then, everything seemed magical to me, from a regular page with text to a page with effects. I didn't even know if I could know it all and write the code myself. But as you can see, anything is possible. Before that I didn't understand computers at all, and now I understand everything, at least in code.
+                </p>
+                <div class="info_more">
+                    <h3 class="inff">/Info|</h3>
+                    <nav>
+                        <span>Name: <span id="ll" class="name_text"></span></span>
+                        <span>Email: <span id="ll" class="emails_text">andystep2008@gmail.com</span></span>
+                        <span>Years: <span id="ll" class="years_text">13</span></span>
+                        <span>Nationality: <span id="ll" class="nation_text"></span></span>
+                        <span>Mini bio: <span id="ll" class="bio_info"></span></span>
+                        <span>UKR.NET email: <span id="ll" class="ukr_net">andystep12@ukr.net</span></span>
+                    </nav>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="cont_skills">
+        <div class="read">
+            <div class="img_home">
+                <img src="home.png" alt="">
+            </div>
+            <div class="img_pro">
+                <img src="laptop.png" alt="">
+            </div>
+            <div class="img_contact">
+                <img src="contact.png" alt="">
+            </div>
+            <div class="img_about">
+                <img src="about.png" alt="">
+            </div>
+            <div class="img_skill">
+                <img src="skills.png" alt="">
+            </div>
+            <div class="img_sett">
+                <img src="settings.png" alt="">
+            </div>
+        </div>
+        <div class="coon">
+            <div class="tech">
+                <div class="fir">
+                    <h2>My tech skills</h2>
+                </div>
+                <div class="sec_co">
+                    <div class="firr">
+                        <div class="lang">HTML</div>
+                        <div class="lang">CSS</div>
+                        <div class="lang">JS</div>
+                        <div class="lang">Bootstrap</div>
+                    </div>
+
+                    <div class="secc">
+                        <div class="lang">jQuery</div>
+                        <div class="lang">Node.js</div>
+                        <div class="lang">Canvas.js</div>
+                        <div class="lang">Tippy.js</div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="soft">
+                <div class="fir">
+                    <h2>My soft skills</h2>
+                </div>
+                <div class="sec_co">
+                    <div class="firr">
+                        <div class="lang">Teemwork</div>
+                        <div class="lang">GTD</div>
+                        <div class="lang">Communication</div>
+                        <div class="lang">Creativity</div>
+                    </div>
+
+                    <div class="secc">
+
+                        <div class="lang">Responsibility</div>
+                        <div class="lang">Leadership</div>
+                        <div class="lang">Motivation</div>
+                        <div class="lang">Patience</div>
+                        <!--                        <div class="lang">Tippy.js</div>-->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cont_sett">
+        <div class="read">
+            <div class="img_home">
+                <img src="home.png" alt="">
+            </div>
+            <div class="img_pro">
+                <img src="laptop.png" alt="">
+            </div>
+            <div class="img_contact">
+                <img src="contact.png" alt="">
+            </div>
+            <div class="img_about">
+                <img src="about.png" alt="">
+            </div>
+            <div class="img_skill">
+                <img src="skills.png" alt="">
+            </div>
+            <div class="img_sett">
+                <img src="settings.png" alt="">
+            </div>
+        </div>
+        <div class="box_sett">
+            <div class="langua">
+                <div class="b_U">
+                    <img class="UA" src="ua.png" alt="">
+                </div>
+                <div class="b_A">
+                    <img class="AM" src="america.png" alt="">
+                </div>
+            </div>
+            <div class="my_social">
+                <div class="up">
+                    <div class="youtube">
+                        <a href="https://www.youtube.com/channel/UCwNQbc3d-M-n0x1UOVDGbNw">
+                            <img src="media/youtube.png" alt="">
+                        </a>
+
+                    </div>
+                    <div class="github">
+                        <a href="https://github.com/AndriyStep12">
+                            <img src="media/github.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="down">
+                    <div class="instagram">
+                        <a href="https://www.instagram.com/andriystep/">
+                            <img src="media/instagram.png" alt="">
+                        </a>
+
+                    </div>
+                    <div class="facebook">
+                        <a href="https://www.facebook.com/andriy.step.5/">
+                            <img src="media/Facebook.png" alt="">
+                        </a>
+
+                    </div>
+                    <div class="twitter">
+                        <a href="https://twitter.com/StepAndriy">
+                            <img src="media/twitter.png" alt="">
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js" integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        //------------------------------------------------------------------------------------------------------------------------------
+
+        let lang = JSON.parse(localStorage.getItem('lang')) || false;
+
+        if (lang == false) {
+            $('.b_A').css("border", "20px double rgba(0, 255, 68, 100);")
+            $('.b_U').css("border", "0 double rgba(0, 255, 68, 100);")
+            $('.soft .fir h2').html("My soft skills")
+            $('.et').html("Developer + Designer + Student")
+            $('.eetee').html("You can call me")
+            $('.tech .fir h2').html("My tech skills")
+            $('.let h2').html(`Hello, I'm <br> <span class="ett">Andriy Stepaniak</span>`)
+            $('form h3').html('Write on <span class="green">Gmail</span> from website')
+            $('form button').html('Sumbit')
+            $('#yant p').html('This is upgrade project of YantarneFM with fixing bugs.')
+            $('#bazou p').html('DEMO version of site game Mon Bazou, where you can read information about this game and donat there.')
+            $('#nfs p').html('Web-site Need For Speed, where I wanted to rely on js. Available is only one page. Some pictures can not load.')
+            $('#lege p').html('This is website of game which call "Vehicle Legends". Information about this game on website no. Site has support all device.')
+            $('#dija p').html('Дія (DEMO) - ukranian passport in smartphone which know all about you. This website was made on the basis of the Ukrainian program "Дія".')
+            $('#pacman p').html('Game "Pacman" on PC. Play from one PC with your friend. In soon you will can play on your phone this game. Date of upgrade is 22/06/2022.')
+            $('#nascar p').html('This is short website, which was built to find a new style in HTML and CSS. News in website are not actual.')
+            $('.about').html(`<span class="txt">Hi there🔥✋. I'm Andriy</span>
+                    <br>
+                    I'm a young programmer. I study at Creator IT Academy and I like it there. During this time I learned something new and interesting. When I came then, everything seemed magical to me, from a regular page with text to a page with effects. I didn't even know if I could know it all and write the code myself. But as you can see, anything is possible. Before that I didn't understand computers at all, and now I understand everything, at least in code.`)
+        } else {
+            $('.b_U').css("border", "20px double rgba(0, 255, 68, 100);")
+            $('.b_A').css("border", "0 double rgba(0, 255, 68, 100);")
+            $('.eetee').html("Називай мене")
+            $('.et').html("Розробник + Дизайнер + Студент")
+            $('.let h2').html(`Привіт, мене звати <br> <span class="ett">Андрій Степаняк</span>`)
+            $('#yant p').html('Це проект оновлення YantarneFM з виправленням помилок.')
+            $('#bazou p').html('ДЕМО-версія сайту гри Mon Bazou, де ви можете прочитати інформацію про цю гру та пожертвувати там.')
+            $('#nfs p').html('Веб-сайт Need For Speed, де я хотів покладатися на js. Доступна лише одна сторінка. Деякі зображення не завантажуються.')
+            $('#lege p').html('Це веб-сайт гри, який називається «Vehicle Legends». Інформація про цю гру на сайті №. Сайт підтримує всі пристрої.')
+            $('#dija p').html('Дія (DEMO) - український паспорт в смартфоні, який знає про тебе все. Цей сайт створений на основі української програми «Дія».')
+            $('#pacman p').html("Гра «Пакмен» на комп'ютер. Грайте на одному комп’ютері зі своїм другом. Незабаром ви зможете грати в цю гру на вашому телефоні. Дата оновлення 22/06/2022.")
+            $('#nascar p').html('Це короткий веб-сайт, який був створений для пошуку нового стилю в HTML і CSS. Новини на сайті не актуальні.')
+
+            $('.soft .fir h2').html("Мої soft skills")
+            $('.tech .fir h2').html("Мої tech skills")
+            $('.abb').html("/Про мене")
+            $('form h3').html('Пиши мені на <span class="green">Gmail</span> з сайту')
+            $('form button').html('Надіслати')
+            $('.inff').html("/Інформація")
+            $('.about').html(`<span class="txt">Привіт там🔥✋. Мене звати Андрій</span>
+                    <br>
+                    Я молодий програміст. Я навчаюся в Creator IT Academy і мені там подобається. За цей час я дізнався щось нове та цікаве. Коли я тоді прийшов, мені все здавалося чарівним, від звичайної сторінки з текстом до сторінки з ефектами. Я навіть не знав, чи можу я знати все і сам написати код. Але, як бачите, все можливо. Раніше я взагалі не розумів комп’ютери, а тепер все розумію, принаймні в коді.`)
+        }
+
+        $('.UA').click(function() {
+            lang = JSON.stringify(localStorage.setItem('lang', true))
+            alert('Українська мова')
+            $('.b_U').css("border", "20px double rgba(0, 255, 68, 100);")
+            $('.b_A').css("border", "0 double rgba(0, 255, 68, 100);")
+            $('.et').html("Розробник + Дизайнер + Студент")
+            $('.eetee').html("Називай мене")
+            $('.let h2').html(`Привіт, мене звати <br> <span class="ett">Андрій Степаняк</span>`)
+            $('#yant p').html('Це проект оновлення YantarneFM з виправленням помилок.')
+            $('#bazou p').html('ДЕМО-версія сайту гри Mon Bazou, де ви можете прочитати інформацію про цю гру та пожертвувати там.')
+            $('#nfs p').html('Веб-сайт Need For Speed, де я хотів покладатися на js. Доступна лише одна сторінка. Деякі зображення не завантажуються.')
+            $('#lege p').html('Це веб-сайт гри, який називається «Vehicle Legends». Інформація про цю гру на сайті №. Сайт підтримує всі пристрої.')
+            $('#dija p').html('Дія (DEMO) - український паспорт в смартфоні, який знає про тебе все. Цей сайт створений на основі української програми «Дія».')
+            $('#pacman p').html("Гра «Пакмен» на комп'ютер. Грайте на одному комп’ютері зі своїм другом. Незабаром ви зможете грати в цю гру на вашому телефоні. Дата оновлення 22/06/2022.")
+            $('#nascar p').html('Це короткий веб-сайт, який був створений для пошуку нового стилю в HTML і CSS. Новини на сайті не актуальні.')
+
+            $('.soft .fir h2').html("Мої soft skills")
+            $('.tech .fir h2').html("Мої tech skills")
+            $('.abb').html("/Про мене")
+            $('form h3').html('Пиши мені на <span class="green">Gmail</span> з сайту')
+            $('form button').html('Надіслати')
+            $('.inff').html("/Інформація")
+            $('.about').html(`<span class="txt">Привіт там🔥✋. Мене звати Андрій</span>
+                    <br>
+                    Я молодий програміст. Я навчаюся в Creator IT Academy і мені там подобається. За цей час я дізнався щось нове та цікаве. Коли я тоді прийшов, мені все здавалося чарівним, від звичайної сторінки з текстом до сторінки з ефектами. Я навіть не знав, чи можу я знати все і сам написати код. Але, як бачите, все можливо. Раніше я взагалі не розумів комп’ютери, а тепер все розумію, принаймні в коді.`)
+        })
+
+        $('.AM').click(function() {
+            lang = JSON.stringify(localStorage.setItem('lang', false))
+            alert('English language')
+            $('.b_A').css("border", "20px double rgba(0, 255, 68, 100);")
+            $('.b_U').css("border", "0 double rgba(0, 255, 68, 100);")
+            $('.et').html("Developer + Designer + Student")
+            $('.eetee').html("You can call me")
+            $('.let h2').html(`Hello, I'm <br> <span class="ett">Andriy Stepaniak</span>`)
+            $('.soft .fir h2').html("My soft skills")
+            $('.tech .fir h2').html("My tech skills")
+            $('form h3').html('Write on <span class="green">Gmail</span> from website')
+            $('form button').html('Sumbit')
+            $('#yant p').html('This is upgrade project of YantarneFM with fixing bugs.')
+            $('#bazou p').html('DEMO version of site game Mon Bazou, where you can read information about this game and donat there.')
+            $('#nfs p').html('Web-site Need For Speed, where I wanted to rely on js. Available is only one page. Some pictures can not load.')
+            $('#lege p').html('This is website of game which call "Vehicle Legends". Information about this game on website no. Site has support all device.')
+            $('#dija p').html('Дія (DEMO) - ukranian passport in smartphone which know all about you. This website was made on the basis of the Ukrainian program "Дія".')
+            $('#pacman p').html('Game "Pacman" on PC. Play from one PC with your friend. In soon you will can play on your phone this game. Date of upgrade is 22/06/2022.')
+            $('#nascar p').html('This is short website, which was built to find a new style in HTML and CSS. News in website are not actual.')
+            $('.about').html(`<span class="txt">Hi there🔥✋. I'm Andriy</span>
+                    <br>
+                    I'm a young programmer. I study at Creator IT Academy and I like it there. During this time I learned something new and interesting. When I came then, everything seemed magical to me, from a regular page with text to a page with effects. I didn't even know if I could know it all and write the code myself. But as you can see, anything is possible. Before that I didn't understand computers at all, and now I understand everything, at least in code.`)
+        })
+
+        //------------------------------------------------------------------------------------------------------------------------------
+
+        tippy('#butt', {
+            content: 'andystep2008@gmail.com',
+            animation: 'scale',
+            theme: 'rgba(0, 255, 68, 100)',
+        });
+        //------------------------------------------------------------------------------------------------------------------------------
+
+        $('.img_skill img').click(function() {
+            $('.cont').css("display", "none")
+            $('.cont_TWO').css("display", "none")
+            $('.cont_about').css("display", "none")
+            $('.contact_me').css("display", "none")
+            $('.cont_skills').css("display", "flex")
+            $('.cont_sett').css("display", "none")
+        })
+
+        $('.img_about img').click(function() {
+            $('.cont').css("display", "none")
+            $('.cont_TWO').css("display", "none")
+            $('.cont_about').css("display", "flex")
+            $('.contact_me').css("display", "none")
+            $('.cont_skills').css("display", "none")
+            $('.cont_sett').css("display", "none")
+        })
+
+        $('.img_contact img').click(function() {
+            $('.cont').css("display", "none")
+            $('.cont_TWO').css("display", "none")
+            $('.cont_about').css("display", "none")
+            $('.contact_me').css("display", "flex")
+            $('.cont_skills').css("display", "none")
+            $('.cont_sett').css("display", "none")
+        })
+
+        $('.img_home img').click(function() {
+            $('.cont').css("display", "flex")
+            $('.cont_TWO').css("display", "none")
+            $('.cont_about').css("display", "none")
+            $('.contact_me').css("display", "none")
+            $('.cont_skills').css("display", "none")
+            $('.cont_sett').css("display", "none")
+        })
+
+        $('.img_pro img').click(function() {
+            $('.cont').css("display", "none")
+            $('.cont_TWO').css("display", "flex")
+            $('.cont_about').css("display", "none")
+            $('.contact_me').css("display", "none")
+            $('.cont_skills').css("display", "none")
+            $('.cont_sett').css("display", "none")
+        })
+        
+        $('.img_sett img').click(function() {
+            $('.cont').css("display", "none")
+            $('.cont_TWO').css("display", "none")
+            $('.cont_about').css("display", "none")
+            $('.contact_me').css("display", "none")
+            $('.cont_skills').css("display", "none")
+            $('.cont_sett').css("display", "flex")
+        })
+
+
+        //------------------------------------------------------------------------------------------------------------------------------
+
+        let r = 1;
+        setInterval(function() {
+            if (r == 1) {
+                $('.pro_my').html('/My <span class="black">best_pro</span>jects|')
+                $('.con').html('/Contact <span class="green">with me|')
+                $('.abb').html('/About me|')
+                $('.inff').html('/Info|')
+                setTimeout(function() {
+                    r = 2;
+                }, 500)
+            } else if (r == 2) {
+                $('.pro_my').html('/My <span class="black">best_pro</span>jects ')
+                $('.con').html('/Contact <span class="green">with me ')
+                $('.abb').html('/About me ')
+                $('.inff').html('/Info')
+                setTimeout(function() {
+                    r = 1;
+                }, 500)
+            }
+        })
+
+
+        let url = 'https://api.github.com/users/'
+
+        async function getUser(username) {
+            let {
+                data
+            } = await axios(url + username);
+            console.log(data)
+            $('.image').css("background-image", "url(" + data.avatar_url + ")")
+            $('.name_text').html(data.name)
+            $('.nation_text').html(data.location)
+            $('.bio_info').html(data.bio)
+        }
+
+        getUser('AndriyStep12')
+
+
+
+        let b = 0;
+        let a = 1;
+        setInterval(function() {
+            if (a == 1) {
+                $('.who').html('/Andriy Stepaniak |')
+                setTimeout(function() {
+                    a = 2;
+                    b = 18600
+                }, 300)
+            } else if (a == 2) {
+                $('.who').html('/Andriy Stepaniak ')
+                setTimeout(function() {
+                    a = 3;
+                }, 300)
+            } else if (a == 3) {
+                $('.who').html('/Andriy Stepaniak|')
+                setTimeout(function() {
+                    a = 4;
+                }, 300)
+            } else if (a == 4) {
+                $('.who').html('/Andriy Stepania|')
+                setTimeout(function() {
+                    a = 5;
+                }, 300)
+            } else if (a == 5) {
+                $('.who').html('/Andriy Stepani|')
+                setTimeout(function() {
+                    a = 6;
+                }, 300)
+            } else if (a == 6) {
+                $('.who').html('/Andriy Stepani|')
+                setTimeout(function() {
+                    a = 7;
+                }, 300)
+            } else if (a == 7) {
+                $('.who').html('/Andriy Stepan|')
+                setTimeout(function() {
+                    a = 8;
+                }, 300)
+            } else if (a == 8) {
+                $('.who').html('/Andriy Stepa|')
+                setTimeout(function() {
+                    a = 9;
+                }, 300)
+            } else if (a == 9) {
+                $('.who').html('/Andriy Step|')
+                setTimeout(function() {
+                    a = 10;
+                }, 350)
+            } else if (a == 10) {
+                $('.who').html('/Andriy Step')
+                setTimeout(function() {
+                    a = 11;
+                }, 350)
+            } else if (a == 11) {
+                $('.who').html('/Andriy Step|')
+                setTimeout(function() {
+                    a = 12;
+                }, 350)
+            } else if (a == 12) {
+                $('.who').html('/Andriy Ste|')
+                setTimeout(function() {
+                    a = 13;
+                }, 300)
+            } else if (a == 13) {
+                $('.who').html('/Andriy St|')
+                setTimeout(function() {
+                    a = 14;
+                }, 300)
+            } else if (a == 14) {
+                $('.who').html('/Andriy S|')
+                setTimeout(function() {
+                    a = 15;
+                }, 300)
+            } else if (a == 15) {
+                $('.who').html('/Andriy |')
+                setTimeout(function() {
+                    a = 16;
+                }, 300)
+            } else if (a == 16) {
+                $('.who').html('/Andriy ')
+                setTimeout(function() {
+                    a = 17;
+                }, 300)
+            } else if (a == 17) {
+                $('.who').html('/Andriy |')
+                setTimeout(function() {
+                    a = 18;
+                }, 300)
+            } else if (a == 18) {
+                $('.who').html('/Andriy|')
+                setTimeout(function() {
+                    a = 19;
+                }, 300)
+            } else if (a == 19) {
+                $('.who').html('/Andri|')
+                setTimeout(function() {
+                    a = 20;
+                }, 300)
+            } else if (a == 20) {
+                $('.who').html('/Andr|')
+                setTimeout(function() {
+                    a = 21;
+                }, 300)
+            } else if (a == 21) {
+                $('.who').html('/And|')
+                setTimeout(function() {
+                    a = 22;
+                }, 300)
+            } else if (a == 22) {
+                $('.who').html('/An|')
+                setTimeout(function() {
+                    a = 23;
+                }, 300)
+            } else if (a == 23) {
+                $('.who').html('/A|')
+                setTimeout(function() {
+                    a = 24;
+                }, 300)
+            } else if (a == 24) {
+                $('.who').html('/|')
+                setTimeout(function() {
+                    a = 25;
+                }, 300)
+            } else if (a == 25) {
+                $('.who').html('/W|')
+                setTimeout(function() {
+                    a = 26;
+                }, 300)
+            } else if (a == 26) {
+                $('.who').html('/We|')
+                setTimeout(function() {
+                    a = 27;
+                }, 300)
+            } else if (a == 27) {
+                $('.who').html('/Web |')
+                setTimeout(function() {
+                    a = 28;
+                }, 300)
+            } else if (a == 28) {
+                $('.who').html('/Web-D|')
+                setTimeout(function() {
+                    a = 29;
+                }, 300)
+            } else if (a == 29) {
+                $('.who').html('/Web-De|')
+                setTimeout(function() {
+                    a = 30;
+                }, 300)
+            } else if (a == 30) {
+                $('.who').html('/Web-Dev|')
+                setTimeout(function() {
+                    a = 31;
+                }, 300)
+            } else if (a == 31) {
+                $('.who').html('/Web-Deve|')
+                setTimeout(function() {
+                    a = 32;
+                }, 300)
+            } else if (a == 32) {
+                $('.who').html('/Web-Devel|')
+                setTimeout(function() {
+                    a = 33;
+                }, 300)
+            } else if (a == 33) {
+                $('.who').html('/Web-Develo|')
+                setTimeout(function() {
+                    a = 34;
+                }, 300)
+            } else if (a == 34) {
+                $('.who').html('/Web-Develop|')
+                setTimeout(function() {
+                    a = 35;
+                }, 300)
+            } else if (a == 35) {
+                $('.who').html('/Web-Develope|')
+                setTimeout(function() {
+                    a = 36;
+                }, 300)
+            } else if (a == 36) {
+                $('.who').html('/Web-Developer|')
+                setTimeout(function() {
+                    a = 37;
+                }, 350)
+            } else if (a == 37) {
+                $('.who').html('/Web-Developer')
+                setTimeout(function() {
+                    a = 38;
+                }, 350)
+            } else if (a == 38) {
+                $('.who').html('/Web-Developer|')
+                setTimeout(function() {
+                    a = 39;
+                }, 350)
+            } else if (a == 39) {
+                $('.who').html('/Web-Develope|')
+                setTimeout(function() {
+                    a = 40;
+                }, 300)
+            } else if (a == 40) {
+                $('.who').html('/Web-Develop|')
+                setTimeout(function() {
+                    a = 41;
+                }, 300)
+            } else if (a == 41) {
+                $('.who').html('/Web-Develo|')
+                setTimeout(function() {
+                    a = 42;
+                }, 300)
+            } else if (a == 42) {
+                $('.who').html('/Web-Devel|')
+                setTimeout(function() {
+                    a = 43;
+                }, 300)
+            } else if (a == 43) {
+                $('.who').html('/Web-Deve|')
+                setTimeout(function() {
+                    a = 44;
+                }, 300)
+            } else if (a == 44) {
+                $('.who').html('/Web-Dev|')
+                setTimeout(function() {
+                    a = 45;
+                }, 300)
+            } else if (a == 45) {
+                $('.who').html('/Web-De|')
+                setTimeout(function() {
+                    a = 46;
+                }, 300)
+            } else if (a == 46) {
+                $('.who').html('/Web-Des|')
+                setTimeout(function() {
+                    a = 47;
+                }, 300)
+            } else if (a == 47) {
+                $('.who').html('/Web-Desi|')
+                setTimeout(function() {
+                    a = 48;
+                }, 300)
+            } else if (a == 48) {
+                $('.who').html('/Web-Desig|')
+                setTimeout(function() {
+                    a = 49;
+                }, 300)
+            } else if (a == 49) {
+                $('.who').html('/Web-Design|')
+                setTimeout(function() {
+                    a = 50;
+                }, 300)
+            } else if (a == 50) {
+                $('.who').html('/Web-Designe|')
+                setTimeout(function() {
+                    a = 51;
+                }, 300)
+            } else if (a == 51) {
+                $('.who').html('/Web-Designer|')
+                setTimeout(function() {
+                    a = 52;
+                }, 350)
+            } else if (a == 52) {
+                $('.who').html('/Web-Designer')
+                setTimeout(function() {
+                    a = 53;
+                }, 350)
+            } else if (a == 53) {
+                $('.who').html('/Web-Designer|')
+                setTimeout(function() {
+                    a = 54;
+                }, 350)
+            } else if (a == 54) {
+                $('.who').html('|')
+                setTimeout(function() {
+                    a = 1;
+                }, 300)
+            }
+        })
+
+    </script>
+
+</body>
+
+</html>
